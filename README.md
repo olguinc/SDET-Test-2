@@ -15,6 +15,4 @@ Instructions
 ------------
 You will need to clone the repository and build the solution in your private Github. Once you are finished, please send a Zip file with the solution.
 
-Please do not upload solution to your public Github repository, only send a Zip with the solution.
-
 Implementation deadline is 1 week. Please let us know the time that you spent to achieve the task.
