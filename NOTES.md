@@ -1,6 +1,7 @@
 ------------------
 Notes
 ------------------
+
 You can find the chromedrivers for each OS in /drivers folder
 You should set up your chromedriver path on DiceRollerTest.java
 
