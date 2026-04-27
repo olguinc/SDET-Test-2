@@ -1,6 +1,0 @@
-pages\BasePage.class
-helpers\WebDriverManager.class
-helpers\Helpers.class
-helpers\ScreenshotHelper.class
-pages\HomePage.class
-tools\ANSIDef.class

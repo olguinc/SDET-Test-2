@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,13 +7,21 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">39,928</td><td></td><td></td></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">1.159.674</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.DiceRollerTest</td><td><a href="#m0">oneDiceTest</a></td><td rowspan="1">1564372543661</td><td rowspan="1">10553</td></tr><tr class="passedeven"><td><a href="#m1">twoDicesTest</a></td><td rowspan="1">1564372563324</td><td rowspan="1">10001</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.DiceRollerTest</td><td><a href="#m0">oneDiceTest</a></td><td rowspan="1">1777324359513</td><td rowspan="1">582276</td></tr><tr class="failedeven"><td><a href="#m1">twoDicesTest</a></td><td rowspan="1">1777324944820</td><td rowspan="1">571420</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">tests.DiceRollerTest#oneDiceTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Starting test...<br/>Getting text...<br/>Text: You rolled 1 die:<br/>Clicking on Roll Again button...<br/>Getting timestamp...<br/>Timestamp: 2019-07-29 03:55:47 UTC<br/>Test Passed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.DiceRollerTest#twoDicesTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Starting test...<br/>Getting text...<br/>Text: You rolled 2 dice:<br/>Clicking on Roll Again button...<br/>Getting timestamp...<br/>Timestamp: 2019-07-29 03:56:07 UTC<br/>Test Passed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">tests.DiceRollerTest#oneDiceTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Starting 1-dice distribution test (1000 rolls)...<br/>Progress: 100/1000<br/>Progress: 200/1000<br/>Progress: 300/1000<br/>Progress: 400/1000<br/>Progress: 500/1000<br/>Progress: 600/1000<br/>Progress: 700/1000<br/>Progress: 800/1000<br/>Progress: 900/1000<br/>Progress: 1000/1000<br/>--- Distribution Chart (expected: 167 per face) ---<br/>Face 1 [████████████████████████████████        ]  151 (-9,4%)<br/>Face 2 [█████████████████████████████████████   ]  177 (+6,2%)<br/>Face 3 [██████████████████████████████          ]  143 (-14,2%)<br/>Face 4 [████████████████████████████████████████]  188 (+12,8%)<br/>Face 5 [█████████████████████████████████████   ]  178 (+6,8%)<br/>Face 6 [██████████████████████████████████      ]  163 (-2,2%)<br/>Max deviation: 14,20% (face 3 — count 143, expected 167)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Deviation 14,20% on face 3 exceeds the 5% limit expected [true] but found [false]
+	at tests.DiceRollerTest.assertUniformDistribution(DiceRollerTest.java:122)
+	at tests.DiceRollerTest.oneDiceTest(DiceRollerTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.DiceRollerTest#twoDicesTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Starting 2-dice distribution test (1000 rolls)...<br/>Progress: 100/1000<br/>Progress: 200/1000<br/>Progress: 300/1000<br/>Progress: 400/1000<br/>Progress: 500/1000<br/>Progress: 600/1000<br/>Progress: 700/1000<br/>Progress: 800/1000<br/>Progress: 900/1000<br/>Progress: 1000/1000<br/>=== Die 1 ===<br/>--- Distribution Chart (expected: 167 per face) ---<br/>Face 1 [████████████████████████████████████████]  188 (+12,8%)<br/>Face 2 [█████████████████████████████████████   ]  177 (+6,2%)<br/>Face 3 [████████████████████████████████        ]  153 (-8,2%)<br/>Face 4 [█████████████████████████████           ]  140 (-16,0%)<br/>Face 5 [█████████████████████████████████████   ]  174 (+4,4%)<br/>Face 6 [███████████████████████████████████     ]  168 (+0,8%)<br/>Max deviation: 16,00% (face 4 — count 140, expected 167)</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Deviation 16,00% on face 4 exceeds the 5% limit expected [true] but found [false]
+	at tests.DiceRollerTest.assertUniformDistribution(DiceRollerTest.java:122)
+	at tests.DiceRollerTest.twoDicesTest(DiceRollerTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

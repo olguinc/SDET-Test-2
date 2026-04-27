@@ -6,11 +6,11 @@ import org.openqa.selenium.WebDriver;
 public class WebDriverManager {
 
 	public static void setWindowSize(WebDriver driver, String size) {
-		if (size == "maximized") {
+		if ("maximized".equals(size)) {
 			driver.manage().window().maximize();
 		}
 
-		if (size == "fullscreen") {
+		if ("fullscreen".equals(size)) {
 			driver.manage().window().fullscreen();
 		}
 	}
