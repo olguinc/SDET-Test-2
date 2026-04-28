@@ -1,4 +1,4 @@
-# 🎲 SDET Test — Dice Distribution Validator
+# 🎲 Dice Distribution Validator Challenge
 
 End-to-end test automation framework built with **Java**, **Selenium**, and **TestNG**, designed to validate the uniform distribution hypothesis for dice rolls on [random.org](https://www.random.org/dice/?num=1).
 
