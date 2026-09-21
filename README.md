@@ -19,7 +19,6 @@ End-to-end test automation framework built with **Java**, **Selenium**, and **Te
 
 **⭐ Bonus:** Draw a chart to visualize dice result deviation in each test — implemented as an ASCII bar chart printed to the console at the end of each test.
 
----
 
 ## 🛠️ Stack
 
@@ -31,7 +30,6 @@ End-to-end test automation framework built with **Java**, **Selenium**, and **Te
 | Maven | — | Build & dependency management |
 | Selenium Manager | built-in | Auto-downloads the correct ChromeDriver |
 
----
 
 ## ⚙️ Setup
 
@@ -45,7 +43,6 @@ End-to-end test automation framework built with **Java**, **Selenium**, and **Te
 
 No manual setup needed. Selenium 4.6+ includes **Selenium Manager**, which automatically downloads the correct ChromeDriver for your installed Chrome version and operating system at runtime.
 
----
 
 ## ▶️ Running Tests
 
@@ -60,7 +57,6 @@ On Windows, if the ASCII chart renders incorrectly in Command Prompt, run:
 mvn package -Dfile.encoding=UTF-8
 ```
 
----
 
 ## 🗂️ Project Structure
 
@@ -78,10 +74,9 @@ SDET-Test-2/
 └── pom.xml
 ```
 
----
 
-## 👩‍💻 Author
+## 👩🏻‍💻 Author
 
-**Carolina Olguin** — Senior QA Engineer · [GitHub](https://github.com/olguinc) · [LinkedIn](https://www.linkedin.com/in/carolina-olg/)
+**Carolina Olguin** — Senior QA Engineer · [GitHub](https://github.com/olguinc) · [LinkedIn](https://www.linkedin.com/in/carolina-olg/) · [Portfolio](https://olguinc.github.io/)
 
 > *"The best tests don't just find bugs — they document the expected behavior of the system."*
